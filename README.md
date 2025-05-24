@@ -13,17 +13,7 @@ This tool leverages anonymized transactional data comprising **30 engineered fea
 - Model deployment via an intuitive web interface
 
 ---
-## Project Layout ##
-📁 fraud-detection-app/
-│── app.py                                                # Main Streamlit interface
-├── .gitignore                                            # Mentioning directories to ignore in version control.
-├── Fraud_detection(by_Adiba) day(1-3).ipynb              # Notebook for initial data analysis & training and testing Base Line Models
-├── Finalmodel_for_fraud_detection(day4).ipynb            # Final notebook for training and evaluating model(RandomForest Classifier)
-├── best_model.joblib                                     # Saved and Load ML model
-├── app_functioning-video.webm                            # App functioning video
-└── requirements.txt                                      # Python package dependencies
 
----
 ## 🛠️ Phased Development Timeline
 
 ### ✅ Phase 1: Initial Data Exploration (EDA)
@@ -36,33 +26,30 @@ This tool leverages anonymized transactional data comprising **30 engineered fea
 
 ### ✅ Phase 2: Building Baseline Models
 - Tested a range of classification algorithms:
-   🔹 Logistic Regression
-   🔹 K-Nearest Neighbors (KNN)
-   🔹 Decision Tree
-   🔹 Naive Bayes
+  - 🔹 Logistic Regression
+  - 🔹 K-Nearest Neighbors (KNN)
+  - 🔹 Decision Tree
+  - 🔹 Naive Bayes
     
 - Metrics used for evaluation:
-   ✔️ Accuracy
-   ✔️ Precision / Recall / F1-Score / Log loss
-   ✔️ ROC-AUC
-   ✔️ Confusion Matrix
+  - ✔️ Accuracy
+  - ✔️ Precision / Recall / F1-Score / Log loss
+  - ✔️ ROC-AUC
+  - ✔️ Confusion Matrix
 
 ### ✅ Phase 3: Feature Refinement + Model Optimization
-✔️ Enhanced preprocessing pipeline:
-  🔹 Normalization of skewed features
-  🔹 Balanced class distribution using **undersampling** and **class_weight**
-  🔹 Selected impactful features through recursive feature elimination
-✔️ Hyperparameter tuning via `RandomizedSearchCV`
-✔️ Finalized **Random Forest** as the optimal model for deployment
+- ✔️ Enhanced preprocessing pipeline:
+  - 🔹 Normalization of skewed features
+  - 🔹 Balanced class distribution using **undersampling** and **class_weight**
+  - 🔹 Selected impactful features through recursive feature elimination
+- ✔️ Hyperparameter tuning via `RandomizedSearchCV`
+- ✔️ Finalized **Random Forest** as the optimal model for deployment
 
 ---
 
 ## 🖥️ App Preview
 
-🎬 A demonstration video is available:  
-👉 _[Add your app demo link here]_ 👈
-
-Or try the live deployment:  
+Try the live deployment:  
 🌐 _[http://192.168.0.110:8501]_ 🌐
 
 ---
@@ -84,12 +71,23 @@ Or try the live deployment:
 - **App Framework**: Streamlit
 
 ---
+## 📘 Learning Outcomes
+
+- Gained hands-on experience with the end-to-end ML pipeline: from data exploration to deployment.
+- Learned to handle imbalanced datasets using class_weight and undersampling techniques.
+- Compared multiple classification models using precision, recall, F1-score, and ROC-AUC metrics.
+- Applied feature scaling, selection, and hyperparameter tuning using `RandomizedSearchCV`.
+- Serialized and reused models with `joblib` for deployment.
+- Built and deployed an interactive fraud detection app using Streamlit.
+- Strengthened understanding of Git version control, project structuring, and documentation.
+
+---
 
 ## ▶️ How to Run Locally
 
 ```bash
 # Clone the repository
-git clone [https://github.com/Adiba2001/Fraud_detection_app].git
+git clone https://github.com/Adiba2001/Fraud_detection_app.git
 cd Fraud_detection_app
 
 # Set up dependencies
@@ -97,23 +95,3 @@ pip install -r requirements.txt
 
 # Launch the Streamlit app
 streamlit run app.py
-    
-Certainly! Here’s a **concise version** of the *Learning Outcomes* section you can directly add to your `README.md`:
-
----
-
----
-
-### 📘 Learning Outcomes
-
-- Gained hands-on experience with the end-to-end ML pipeline: from data exploration to deployment.
-- Learned to handle imbalanced datasets using SMOTE and undersampling techniques.
-- Compared multiple classification models using precision, recall, F1-score, and ROC-AUC metrics.
-- Applied feature scaling, selection, and hyperparameter tuning using `GridSearchCV`.
-- Serialized and reused models with `joblib` for deployment.
-- Built and deployed an interactive fraud detection app using Streamlit.
-- Strengthened understanding of Git version control, project structuring, and documentation.
-
----
-
-
