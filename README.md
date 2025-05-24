@@ -102,15 +102,17 @@ Certainly! Here’s a **concise version** of the *Learning Outcomes* section you
 
 ---
 
-## 📘 Learning Outcomes 
+---
 
-* Gained hands-on experience with the end-to-end ML pipeline: from data exploration to deployment.
-* Learned to handle imbalanced datasets using class_weight and undersampling.
-* Compared multiple models using precision, recall, F1-score, and ROC-AUC.
-* Applied feature scaling, selection, and hyperparameter tuning via `RandomizedSearchCV`.
-* Serialized models with `joblib` for reuse in production.
-* Built and deployed an interactive Streamlit app for real-time fraud prediction.
-* Improved project structure, documentation, and version control with Git best practices.
+### 📘 Learning Outcomes
+
+- Gained hands-on experience with the end-to-end ML pipeline: from data exploration to deployment.
+- Learned to handle imbalanced datasets using SMOTE and undersampling techniques.
+- Compared multiple classification models using precision, recall, F1-score, and ROC-AUC metrics.
+- Applied feature scaling, selection, and hyperparameter tuning using `GridSearchCV`.
+- Serialized and reused models with `joblib` for deployment.
+- Built and deployed an interactive fraud detection app using Streamlit.
+- Strengthened understanding of Git version control, project structuring, and documentation.
 
 ---
 
